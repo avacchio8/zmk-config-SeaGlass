@@ -6,3 +6,5 @@ url: https://github.com/kumamuk-git/zmk-config-SeaGlass
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - pointer
+  - studio
