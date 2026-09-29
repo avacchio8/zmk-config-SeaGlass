@@ -48,6 +48,9 @@
 | 右手側基板 | 1枚 | |
 | 左手側基板 | 1枚 | |
 | トラックボール基板 | 1枚 | |
+| トラックボールセンサー | 1個 | |
+| トラックボールセンサー用レンズ | 1個 | |
+| キーソケット | 40個 | 左右各20個 |
 | セラミック球2mm | 3個 | 右手側用トッププレートに組み込み済 |
 | キーキャップ（白） | 30個 | 3DP製 |
 | キーキャップ（青） | 10個 | 3DP製 |
@@ -107,7 +110,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 ### 1-4. 組付け済部品の分解
 
 梱包時に組付けられた状態になっている部品がいくつかあります。\
-組み立てを行う前に、一度それらを分解してください。半組み立てキット場合の説明を記載していますが、お手元のキットの形態に応じて適宜読み替えてください。
+組み立てを行う前に、一度それらを分解してください。半組み立てキットの場合の説明を記載していますが、お手元のキットの形態に応じて適宜読み替えてください。
 
 1. 背面のネジを４本外し、底面ケースを取り外します。
 2. 基板とトッププレートを取り外します。半組み立てキットの場合マイコンがケースと干渉するため基板を斜めに持ち上げるように取り外してください。
@@ -212,7 +215,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 <a id="2-6-トラックボールセンサー接続用ピンヘッダはんだ付け"></a>
 ### 2-6. トラックボールセンサー接続用ピンヘッダはんだ付け
 
-Comming soon...\
+Coming soon...\
 ※ 半組み立てキットではこの工程は対応不要です！\
 ※ 現行ロットでは組み立てキットでもこの工程は対応不要です！
 
@@ -221,12 +224,12 @@ Comming soon...\
 
 トラックボール読み取りセンサーを基板に取り付けます。
 
-1. 半組み立てキットの場合、トラックボール基板にピンをはんだ付け済みで、右手側基板のソケットの差し込み済の状態になっています。センサーのはんだ付けのため、メイン基板からトラックボール基板を引き抜いてください。
+1. 半組み立てキットの場合、トラックボール基板にピンをはんだ付け済みで、右手側基板のソケットに差し込み済みの状態になっています。センサーのはんだ付けのため、メイン基板からトラックボール基板を引き抜いてください。
 2. センサーを基板に差し込みます。画像を参考に、向きを間違えないようにしてください。
 ![tb1](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/tb1.png)
-1. センサーをマスキングテープなどで固定してください。
-2. すべてのピンにはんだ付けをします。はんだを盛りすぎない・長時間熱しすぎないように注意してください。
-3. 画像のようになればOKです。
+3. センサーをマスキングテープなどで固定してください。
+4. すべてのピンにはんだ付けをします。はんだを盛りすぎない・長時間熱しすぎないように注意してください。
+5. 画像のようになればOKです。
 ![tb2](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/tb2.png)
 
 <a id="2-8-トラボレンズ固定"></a>
@@ -267,7 +270,7 @@ Comming soon...\
 6. （任意）左右を磁石で合体させたい方はボトムプレートに磁石をはめ込んでください。底面同士がくっつくように極性をしっかり確認してください。
 7. ボトムプレートにリセットスイッチ用パーツを乗せてください。固定はされないので落とさないよう取り扱いに注意してください。
 ![rt6](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/rt6.png)
-9. ボトムプレートにバッテリーを装着してください。
+8. ボトムプレートにバッテリーを装着してください。
 ![rt7](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/rt7.png)
 9. 右手側カバーにPOM球を乗せてください。
 ![rt8](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/rt8.png)
@@ -276,7 +279,7 @@ Comming soon...\
 11. リセットスイッチがはずれないよう注意しつつボトムプレートを閉じ、4箇所ネジ止めしてください。このときネジを強く締めすぎるとネジ穴が潰れてしまう可能性があるので、締めすぎには注意してください。
 ![rt10](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/rt10.png)
 ![rt11](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/rt11.png)
-12. 電源スイッチを装着してください。
+12. 電源スイッチカバーを装着してください。
 ![lt5](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/lt5.png)
 13. キーキャップとキースイッチを取り付けたら完成です！
 
@@ -290,7 +293,7 @@ Comming soon...\
 3. 右手側と同様にクッションシールおよびゴム足貼り付けと、バッテリー・リセットスイッチの装着を行ってください。
 4. 右手側と同様に斜め方向からトップカバーを装着してください。ロータリーエンコーダとホイールのはめ込みがある分右手側よりややシビアですが、信じてグッとやればズボッとハマるはずです。
 ![lt4](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/lt4.png)
-5. 右手側と同様にネジを4箇所止め、電源スイッチを装着してください。
+5. 右手側と同様にネジを4箇所止め、電源スイッチカバーを装着してください。
 6. キーキャップとキースイッチを取り付けたら完成です！
 
 ![fin](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/fin.png)
@@ -308,9 +311,10 @@ Comming soon...\
 [ダウンロード](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/test_firmware.zip)
 
 ダウンロード後zipファイルを展開し、
-- `SeaGlass_L rgbled_adapter-seeeduino_xiao_ble-zmk.uf2`
-- `SeaGlass_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2`
-- `settings_reset-seeeduino_xiao_ble-zmk.uf2`
+
+- `SeaGlass_L-rgbled_adapter-xiao_ble-zmk-zmk.uf2`
+- `SeaGlass_R-rgbled_adapter-xiao_ble-zmk-zmk.uf2`
+- `settings_reset-xiao_ble-zmk-zmk.uf2`
 
 という3つのファイルが入っていることを確認してください。
 
@@ -323,11 +327,11 @@ Comming soon...\
    - PCとSeaGlass右手側をUSBケーブルで接続します。
    - リセットボタンを素早く2回押します。SeaGlassのリセットボタンは本体裏面の白いボタンです。
    - PC上で「NO NAME」や「XIAO-BOOT」などの名称でドライブが認識されれば成功です。（マイコンのロットなどによって表示名が異なる場合があります。）
-2. 表示されたドライブに `settings_reset-seeeduino_xiao_ble-zmk.uf2` をドラッグ&ドロップまたはコピー&ペーストで書き込みます。この時画像のようなメッセージが出る場合がありますが、ドライブが自動的に認識されなくなっていたら書き込みに成功しています。\
-   `settings_reset-seeeduino_xiao_ble-zmk.uf2` は設定初期化用のファイルなので、基本的に今後は書き込み不要です。
+2. 表示されたドライブに `settings_reset-xiao_ble-zmk-zmk.uf2` をドラッグ&ドロップまたはコピー&ペーストで書き込みます。この時画像のようなメッセージが出る場合がありますが、ドライブが自動的に認識されなくなっていたら書き込みに成功しています。\
+   `settings_reset-xiao_ble-zmk-zmk.uf2` は設定初期化用のファイルなので、基本的に今後は書き込み不要です。
   ![err1](https://raw.githubusercontent.com/hama-be/zmk-config-SeaGlass/refs/heads/main/docs/img/err1.png)
-3. 再度マイコンをブートローダーモードにし、今度は右手用のファームウェア`SeaGlass_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` を同様の手順で書き込みます。この時も同様のメッセージが出ることがありますが、正常です。
-4. 左手側も同様の手順で`settings_reset-seeeduino_xiao_ble-zmk.uf2` → `SeaGlass_L rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` の順番で書き込みを行います。
+3. 再度マイコンをブートローダーモードにし、今度は右手用のファームウェア`SeaGlass_R-rgbled_adapter-xiao_ble-zmk-zmk.uf2` を同様の手順で書き込みます。この時も同様のメッセージが出ることがありますが、正常です。
+4. 左手側も同様の手順で`settings_reset-xiao_ble-zmk-zmk.uf2` → `SeaGlass_L-rgbled_adapter-xiao_ble-zmk-zmk.uf2` の順番で書き込みを行います。
 5. 左右の書き込みが完了したらUSBケーブルを取り外し、両方のSeaGlassのスイッチをオン（上側）にし、マイコンのリセットスイッチを左右どちらも一度ずつ押します
 6. 電源オンの時やリセットの時にマイコンのLEDが点滅するはずです。以下の意味がありますので、正常に点滅することを確認してください。
    - 最初の点灯（バッテリーの残量）
@@ -337,7 +341,7 @@ Comming soon...\
       - 🔵は接続成功、🟡はペアリング中、🔴は接続失敗を意味します。
       - 左右で少し意味が異なり、左側の点灯は親側（右側）へのペアリング状況を意味し、右側の点灯はPCなどの機器へのペアリング状況を意味します。
   - ですので、ファームウェア書き込み後の正常な点灯は以下のとおりです。
-    - 左手側：🟢/🟡/🔴（バッテリーの充電状況次第）→ 🔵（左手側との接続成功）
+    - 左手側：🟢/🟡/🔴（バッテリーの充電状況次第）→ 🔵（右手側との接続成功）
     - 右手側：🟢/🟡/🔴（バッテリーの充電状況次第）→ 🟡（機器とのペアリング中）
   
   詳細は[zmk-rgbled-widget](https://github.com/caksoylar/zmk-rgbled-widget)のREADMEをご覧ください。
@@ -354,7 +358,7 @@ Comming soon...\
 ### 4-3. Bluetooth切り替え手順
 
 本キーボードは最大5台のBluetoothデバイスとの接続を切り替えることができます。\
-接続先の切り替えはキーマップで設定可能で、テストファームウェアだとレイヤー6のz~bキーに設定されています。
+接続先の切り替えはキーマップで設定可能で、テストファームウェアではCONFIGレイヤー（レイヤー6）の左手側最下段5キーに、左から順に接続先0〜4が設定されています。右手側最下段の左から3番目にあるEnterキーを長押ししてCONFIGレイヤーに切り替え、そのまま接続先のキーを押してください。
 
 
 <a id="4-4-動作確認"></a>
