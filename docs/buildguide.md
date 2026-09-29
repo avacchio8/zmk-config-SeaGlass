@@ -23,7 +23,7 @@
     - [4-2. テスト用ファームウェアの書き込みとペアリング](#4-2-テスト用ファームウェアの書き込みとペアリング)
     - [4-3. Bluetooth切り替え手順](#4-3-bluetooth切り替え手順)
     - [4-4. 動作確認](#4-4-動作確認)
-    - [4-5. ZMK Studio・DYA Studioの活用](#4-5-zmk-studioの活用)
+    - [4-5. DYA Studioの活用](#4-5-dya-studioの活用)
     - [4-6. ZMKファームウェアのカスタマイズとビルド方法](#4-6-zmkファームウェアのカスタマイズとビルド方法)
   - [5. お疲れさまでした](#5-お疲れさまでした)
 
@@ -365,32 +365,24 @@ Bluetoothの接続後、キーやトラックボールの動作を確認して�
 
 
 
-<a id="4-5-zmk-studioの活用"></a>
-### 4-5. ZMK Studioの活用
+<a id="4-5-dya-studioの活用"></a>
+### 4-5. DYA Studioの活用
 
-※ 2026/06/16追記\
-本ファームウェアはキーマップ変更ツールDYA Studioに対応しました！\
-DYA Studioは[こちら](https://studio.dya.cormoran.works/)です。 special thanks! [cormoran](https://x.com/cormoran707) さん\
-ZMK Studioより多彩な設定がファームウェアのビルド無しで行えます。ぜひ使ってみてください。\
-※ 追記終わり
+SeaGlassは、ブラウザからZMKキーボードの設定を編集できる[DYA Studio](https://studio.dya.cormoran.works/)に対応しています。DYA StudioはZMK Studio互換のキーマップ編集に加え、対応するファームウェアとモジュールを組み合わせることで、トラックボールや接続先などの設定も一つの画面で扱えるツールです。機能の全体像は作者による[DYA Studioの紹介記事](https://note.com/cormoran/n/ncd20ee4c1213)をご覧ください。special thanks! [cormoran](https://x.com/cormoran707) さん
 
+SeaGlassのファームウェアはDYA StudioのLevel 2まで対応しています。キー配置やレイヤーだけでなく、複数のキーを同時押しして別の入力を実行する「コンボ」と、一つの操作で連続したキー入力を実行する「マクロ」も、ファームウェアを変更・再ビルドすることなくDYA Studio上で設定できます。Level 2の詳細は[DYA Studio開発者ガイド](https://studio.dya.cormoran.works/developer-guide/level-2)を参照してください。
 
-
-SeaGlassはZMK Studioに対応しています。ZMK Studioを使用することでファームウェアを書き換えることなくGUIでキーマップを簡単に編集できます。\
-ただしZMK Studio自体まだ開発段階？のようで、設定可能なキーボード設定に一部制限があります。なのでZMK Studioでのカスタマイズのみでは後々物足りなくなる可能性が高いですが、GitHubに慣れていない方などはまずはこちらでいろいろ触ってみるのも手だと思います。
-
-1. [ZMK Studio](https://zmk.studio/)にアクセスします。
-2. 接続するキーボードを選択します。
-3. 接続が完了すると、現在のキーマップが表示されます。
-4. 変更したいキーをクリックし、任意の動作を選択します。
-5. 設定が完了したら右上の保存ボタンをクリックして変更を保存します。
-   
-細かい操作や設定、どういった制限があるのかなどについてはここでは説明しませんので詳しくは[こちら](http://zmk.dev/docs/features/studio)を参照してください。
+1. [DYA Studio](https://studio.dya.cormoran.works/)にアクセスします。
+2. SeaGlassの右手側をUSBケーブルでPCに接続し、「USBで接続」を選択します。
+3. 接続するキーボードを選択します。
+4. SeaGlassのCONFIGレイヤーにあるStudio Unlockキーを押し、設定の変更を許可します。
+5. 「Keymap」や「Macros & Combos」などの画面で設定を編集します。
+6. 未保存の変更を保存すると、設定がキーボード本体に保持されます。
 
 <a id="4-6-zmkファームウェアのカスタマイズとビルド方法"></a>
 ### 4-6. ZMKファームウェアのカスタマイズとビルド方法
 
-ZMK Studioで対応していない高度な設定を行いたい場合は、直接ファームウェアをカスタマイズしてビルドする必要があります。ファームウェアのカスタマイズビルドにはGitHubを使用します。\
+DYA Studioで変更できない設定を行いたい場合や、初期設定そのものを変更したい場合は、直接ファームウェアをカスタマイズしてビルドする必要があります。ファームウェアのカスタマイズビルドにはGitHubを使用します。\
 ファームウェアのリポジトリはこちらです。\
 [zmk-config-SeaGlass](https://github.com/hama-be/zmk-config-SeaGlass)
 
