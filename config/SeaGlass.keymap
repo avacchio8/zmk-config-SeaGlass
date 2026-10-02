@@ -20,12 +20,93 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        cmbEsc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        cmbEng {
+            bindings = <&kp LANG2>;
+            key-positions = <27 28>;
+        };
+
+        cmbJp {
+            bindings = <&kp LANG1>;
+            key-positions = <31 32>;
+        };
+
+        cmbMinus {
+            bindings = <&kp MINUS>;
+            key-positions = <21 22>;
+        };
+
+        cmbSingle {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <33 34>;
+        };
+
+        cmbMB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <15 16>;
+        };
+
+        cmbMB3 {
+            bindings = <&mkp MB3>;
+            key-positions = <26 25>;
+        };
+
+        cmbTog6 {
+            bindings = <&tog 6>;
+            key-positions = <2 3>;
+        };
+    };
+
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+        space4: space4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            label = "SPACE4";
+        };
+
+        left4: left4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+            label = "LEFT4";
+        };
+
+        right4: right4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
+            label = "RIGHT4";
+        };
+
+        dlThem: dlThem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT &kp T>,
+                <&macro_wait_time 100>,
+                <&kp UP_ARROW>,
+                <&macro_wait_time 100>,
+                <&kp RIGHT>,
+                <&macro_wait_time 100>,
+                <&kp DOWN>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>;
+
+            label = "DLTHEM";
         };
     };
 
