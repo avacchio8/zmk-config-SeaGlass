@@ -29,12 +29,12 @@
         };
 
         cmbEng {
-            bindings = <&kp LANG2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <27 26>;
         };
 
         cmbJp {
-            bindings = <&kp LANG1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <22 23>;
         };
 
