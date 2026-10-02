@@ -20,57 +20,6 @@
 };
 
 / {
-    runtime_combo_defaults {
-        compatible = "cormoran,runtime-combo-defaults";
-
-        middle-click {
-            slot = <0>;
-            bindings = <&mkp MB3>;
-            key-positions = <40 41>;
-            display-name = "Middle Click";
-        };
-
-        tab {
-            slot = <1>;
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-            layers = <0>;
-            display-name = "Tab";
-        };
-
-        backspace {
-            slot = <2>;
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-            layers = <0>;
-            display-name = "Backspace";
-        };
-
-        input_eisu {
-            slot = <3>;
-            bindings = <&kp LANG2>;
-            key-positions = <34 24>;
-            layers = <0>;
-            display-name = "Eisu";
-        };
-
-        input_kana {
-            slot = <4>;
-            bindings = <&kp LANG1>;
-            key-positions = <35 25>;
-            layers = <0>;
-            display-name = "Kana";
-        };
-
-        escape {
-            slot = <5>;
-            bindings = <&kp ESC>;
-            key-positions = <1 0>;
-            layers = <0>;
-            display-name = "Escape";
-        };
-    };
-
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
