@@ -224,11 +224,11 @@
 
         bronx {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &mo 7     &mt LG(DOWN) LG(UP_ARROW)  &kp LG(TAB)    &kp LC(LS(TAB))  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &mkp MB3  &kp LEFT                   &kp F11        &kp RIGHT        &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN          &kp C_MUTE     &kp C_VOLUME_UP  &kp LS(LG(RIGHT))
-&trans  &trans  &trans  &trans  &trans  &mkp MB1  &kp LA(LEFT)               &kp LA(RIGHT)  &trans           &dlThem
-                                        &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &mo 7      &mt LG(DOWN) LG(UP_ARROW)  &kp LG(TAB)    &kp LC(LS(TAB))    &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &mkp MB3   &kp LEFT                   &kp F11        &kp RIGHT          &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &kp LC(T)  &kp C_VOLUME_DOWN          &kp C_MUTE     &kp C_VOLUME_UP    &kp LC(R)
+&trans  &trans  &trans  &trans  &trans  &mkp MB1   &kp LA(LEFT)               &kp LA(RIGHT)  &kp LS(LG(RIGHT))  &dlThem
+                                        &mkp MB2   &mkp MB3
             >;
 
             label = "BRONX";
