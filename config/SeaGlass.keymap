@@ -62,6 +62,11 @@
             bindings = <&mkp MB3>;
             key-positions = <40 41>;
         };
+
+        cmbTog6 {
+            bindings = <&tog 6>;
+            key-positions = <29 39>;
+        };
     };
 
     macros {
@@ -216,11 +221,11 @@
 
         bronx {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans   &trans  &kp LC(LS(TAB))  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &mkp MB3  &trans   &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &mo 7     &trans   &trans  &trans           &trans
+                                        &mkp MB2  &dlThem
             >;
 
             label = "BRONX";
